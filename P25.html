@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body background="vendorlogin1.jpg">
+	<form name="frmLeaveDetails">
+		<table border="3" align="center">
+			<tr>
+				<th colspan="2">
+					Leave Application Form
+				</th>
+			</tr>
+			<tr>
+				<th>Leave Id</th>
+				<td>
+					<select name="leaveId">
+						<option value="Rahul">Rahul</option>
+						<option value="Ruchita">Ruchita</option>
+						<option value="Snigdha">Snigdha</option>
+						<option value="Varun">Varun</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Manager Name</th>
+				<td>
+					<select name="manager">
+						<option value="Srinivas">Srinivas</option>
+						<option value="Pavan">Pavan</option>
+						<option value="Sahil">Sahil</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Leave Start Date</th>
+				<td>
+					<input type="date" name="leaveStartDate" /> 
+			</tr>
+			<tr>
+				<th>Leave End Date</th>
+				<td>
+					<input type="date" name="leaveEndDate" /> 
+				</td>
+			</tr>
+			<tr>
+				<th>No.of Days</th>
+				<td>
+					<input type="number" name="noOfDays" readonly="readonly" />
+				</td>
+			</tr>
+			<tr>
+				<th>Leave Type</th>
+				<td>
+					<select name="leaveType">
+						<option value="El">EL</option>
+						<option value="PL">PL</option>
+						<option value="ML">ML</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Leave Status</th>
+				<td>	
+					<select name="leaveStatus">
+						<option value="PENDING">Pending</option>
+						<option value="APPROVED">Approved</option>
+						<option value="REJECTED">Rejected</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Leave Applied On</th>
+				<td>
+					<input type="date" name="leaveAppliedOn" /> 
+				</td>
+			</tr>
+			<tr>
+				<th>Manager Comments</th>
+				<td>	
+					<input type="text" name="managerComments"/>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input type="submit" value="Apply Leave" /> 
+					&nbsp; &nbsp;&nbsp;&nbsp;
+					<input type="reset" value="Reset" />
+				</th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
