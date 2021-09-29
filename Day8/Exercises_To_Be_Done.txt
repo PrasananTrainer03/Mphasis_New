@@ -1,0 +1,41 @@
+1) Multiplication 2 number (100 digit * 100 digit ) exact value
+
+2) Display a number in roman format from (1 to 9999)
+
+	1 -I
+	9 - IX
+	
+3) Write a Program sample current bill 
+
+Ex : see 
+
+First 100 units 1.2 paise
+
+100 to 150 units 1.5 
+
+150 to 200 units 2 rs
+
+150 to 250 units 2.5
+
+250+ 3 rs
+
+Means if current bill is 180 units 
+
+(100*1.2) + (50*1.5) + (30*2) 
+
+4) Program to print armstrong numbers of given range 
+
+5) Program to print perfect numbers of given range 
+
+6) Program to print even numbers of given range 
+
+7) Program to print Twin Prime Numbers 
+
+3,5
+
+5,7 
+
+11,13 
+
+17,19 
+
