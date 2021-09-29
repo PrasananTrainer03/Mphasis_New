@@ -29,7 +29,7 @@ If it is 210 units
 
 If its 510 units
 
-(100*1.2) + (50*1.5) + (50*2) + (50*2.5) + (310*3) 
+(100*1.2) + (50*1.5) + (50*2) + (50*2.5) + (260*3) 
 
 4) Program to print armstrong numbers of given range 
 
