@@ -57,6 +57,62 @@ Collections :
 	nextBoolean()
 
 
+What is Drawback with Arrays : 
+______________________________
+
+
+Arrays are basically static data structures, means as we cannot  redefine the size.
+
+This is tedious sometimes, for this we need the help of Collections. 
+
+Collections : 
+
+A collection is an object that contains a group of objects within it. These objects are called the elements of the collection.  The elements of collectin descend from a common parent type.  Collections have an adv. over arrays that collectino can grow to any size unlike arrays. 
+
+Constructors : 
+
+1. CollectionName() -> Creates an empty collection. A void  constructor does not accept any arg.
+
+2. CollectionName(Collection col1) : Creates a new collection that accepts a collection as an arg. and returns the collection containsing the same elements as the collection arg. 
+
+List Interface : This interface extends the collection to handle sequence or a list of objects. Elements can be inserted in a list and can be accessed from a list using their index pos. in the list. 
+
+	Allows you to store group of values in the given collection, then we need the help of List interface.
+
+	ArrayList, LinkedList are falling under List interface.
+
+Wrapper classes : If you want to store data types as object, these are called wrapper classes. 
+
+int x=12;
+
+Integer x = new Integer(12) -> this is called wrapper class. 
+
+double x=12.6;
+Double x = new Double(12.6) -> Wrapper class. 
+
+
+
+Set interface : This interface extends the Collection interface to handle sets containing unique elements.  This interface does not allow any duplicate elements in a set. 
+
+HashSet and LinkedHashSet are falling under Set interface. 
+
+diff between HashSet and LinkedHashSet is HashSet dispalys data in random order,
+where LinkedHashSet displays data in insertion order. 
+
+
+
+
+SortedSet interface : Used to extends the Set interface to handle the sorted sets. The elements of a set are ordered in ascending order in a sorted set.  
+
+	Allows you to display data w.r.t. Sorting Order. Here TreeSet is falling under SortedSet interface.
+
+
+
+
+
+
+
+
 	
 
 
