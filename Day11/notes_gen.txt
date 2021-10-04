@@ -106,3 +106,66 @@ It is mutable, which allows you write and modify the content.
 If you want to append more than one line in a given string object, then we need the help of StringBuilder. 
 
 
+___________________________________________________________________________________________
+
+This Project contains 5 layers 
+
+Model Layer
+
+Exception Layer
+
+DAO Layer
+
+BAL Layer
+
+Main Layer 
+
+Create a class as Student.java
+
+it contains the fields as 
+
+private int sno;
+	private String name;
+	private String city;
+	private double cgp;
+
+Now, you need to perform operations as 
+
+1) Add Student
+
+2) Show Student
+
+3) Serach Student
+
+4) Update Student
+
+5) Delete Student 
+
+*** Validations ***
+
+Sno cannot be negataive
+name min 3 chars
+city min 3 chars
+cgp cannot be zero or negative 
+
+
+Model class contains only getters setters, constructors toString() etc...
+
+Exception class contains all error messages 
+
+DAO is the heart that contains actual business logic 
+
+BAL is a business layer which is responsible for validations. 
+
+MainProg contains actual Main code. 
+
+
+
+
+
+
+
+
+
+
+
