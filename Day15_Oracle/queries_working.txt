@@ -131,3 +131,13 @@ case
 end TakeHome
 from Emp;
 
+select instr('bharath','a') from dual;
+select Ename,instr(ename,'A') from emp;
+
+reverse : used to display string in reverse order 
+
+select reverse('snigdha') from dual;
+
+sysdate : Displays the today's date 
+
+select sysdate from dual;
