@@ -1,0 +1,101 @@
+create or replace procedure prcSayHello
+AS
+BEGIN
+   dbms_output.put_line('Welcome to PLSQL Programming...');
+END;
+
+To Execute the procedure give as
+
+Exec PrcSayHello;
+
+create or replace procedure prcGreeting(name varchar2)
+AS
+BEGIN
+   dbms_output.put_line('Name is  ' ||name);
+END;
+
+
+exec prcGreeting('Adarsh');
+
+Create or replace procedure prcCalc(a number,b number)
+AS
+BEGIN
+    declare 
+       c number;
+    begin 
+      c:=a+b;
+      dbms_output.put_line('Sum is  ' ||c);
+    end;
+END;
+
+create or replace procedure prcDiv(a number,b number)
+AS
+BEGIN
+    declare 
+      c number;
+    begin
+       c:=a/b;
+       dbms_output.put_line('Division ' ||c);
+    Exception
+       WHEN ZERO_DIVIDE THEN
+         dbms_output.put_line('Division by zero impossible...');
+    end;
+END;
+
+How to see the list of stored procedures avaible in current db. 
+
+select * from user_objects where object_type='PROCEDURE';
+
+Write a procedure to print total no.of records in Employ table 
+
+Create or replace procedure prcEmployCount
+AS
+BEGIN
+    declare 
+      cnt number;
+    begin
+       select count(*) into cnt from Employ;
+       dbms_output.put_line('Total Records of Employ table ' ||cnt);
+    end;
+END;
+
+create or replace procedure prcEmploySearch(eno employ.empno%type)
+AS
+BEGIN
+    declare
+      nam employ.name%type;
+      gen employ.gender%type;
+      dpt employ.dept%type;
+      dsg employ.desig%type;
+      bas employ.basic%type;
+    begin
+        select 
+             name,gender,dept,desig,basic into nam,gen,dpt,dsg,bas
+	  from Employ where empno=eno;
+        dbms_output.put_line('Name  ' ||nam);
+        dbms_output.put_line('Gender ' ||gen);
+        dbms_output.put_line('Department ' ||dpt);
+        dbms_output.put_line('Designation ' ||dsg);
+        dbms_output.put_line('Salary ' ||bas);
+    Exception
+        WHEN NO_DATA_FOUND THEN
+          dbms_output.put_line('Employ Record Not Found...');
+    end;   
+END;
+
+
+Create or replace procedure PrcEmployInsert(nam employ.name%type,
+					    gen employ.gender%type,
+					    dpt employ.dept%type,
+			  	            dsg employ.desig%type,
+      					    bas employ.basic%type)
+AS
+BEGIN
+	declare
+	    empno employ.empno%type;
+        begin
+	   select case when max(empno) is NULL THEN 1 else max(empno)+1 END into empno from Employ;
+	   Insert into Employ(empno,name,gender,dept,desig,basic) values(empno,nam,gen,dpt,dsg,bas);
+        end;
+END;
+
