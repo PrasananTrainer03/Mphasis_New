@@ -1,0 +1,51 @@
+02-Feb-2021 17:41:03.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.42
+02-Feb-2021 17:41:03.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:29:04 UTC
+02-Feb-2021 17:41:03.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.42.0
+02-Feb-2021 17:41:03.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-Feb-2021 17:41:03.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-Feb-2021 17:41:03.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-Feb-2021 17:41:03.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_271\jre
+02-Feb-2021 17:41:03.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_271-b09
+02-Feb-2021 17:41:03.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-Feb-2021 17:41:03.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42
+02-Feb-2021 17:41:03.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42
+02-Feb-2021 17:41:03.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\conf\logging.properties
+02-Feb-2021 17:41:03.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Feb-2021 17:41:03.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-Feb-2021 17:41:03.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Feb-2021 17:41:03.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-Feb-2021 17:41:03.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42
+02-Feb-2021 17:41:03.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42
+02-Feb-2021 17:41:03.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\temp
+02-Feb-2021 17:41:03.514 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+02-Feb-2021 17:41:03.520 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+02-Feb-2021 17:41:03.521 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-Feb-2021 17:41:03.636 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+02-Feb-2021 17:41:03.920 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8181"]
+02-Feb-2021 17:41:04.257 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Feb-2021 17:41:04.294 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+02-Feb-2021 17:41:04.304 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Feb-2021 17:41:04.305 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1780 ms
+02-Feb-2021 17:41:04.371 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-Feb-2021 17:41:04.371 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.42
+02-Feb-2021 17:41:04.409 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\docs]
+02-Feb-2021 17:41:05.174 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\docs] has finished in [765] ms
+02-Feb-2021 17:41:05.175 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\examples]
+02-Feb-2021 17:41:07.570 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\examples] has finished in [2,394] ms
+02-Feb-2021 17:41:07.572 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\host-manager]
+02-Feb-2021 17:41:08.183 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\host-manager] has finished in [611] ms
+02-Feb-2021 17:41:08.185 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\manager]
+02-Feb-2021 17:41:08.435 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\manager] has finished in [249] ms
+02-Feb-2021 17:41:08.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\ROOT]
+02-Feb-2021 17:41:08.564 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42\webapps\ROOT] has finished in [121] ms
+02-Feb-2021 17:41:08.594 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8181"]
+02-Feb-2021 17:41:08.647 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+02-Feb-2021 17:41:08.667 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4360 ms
+02-Feb-2021 17:42:19.038 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+02-Feb-2021 17:42:19.039 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8181"]
+02-Feb-2021 17:42:19.439 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+02-Feb-2021 17:42:19.750 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-Feb-2021 17:42:19.905 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8181"]
+02-Feb-2021 17:42:19.961 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+02-Feb-2021 17:42:19.971 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8181"]
+02-Feb-2021 17:42:19.975 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
