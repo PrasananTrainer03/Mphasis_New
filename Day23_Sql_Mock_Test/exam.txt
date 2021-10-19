@@ -13,6 +13,8 @@ D.
 
 None of these
 
+C
+
 2) Which operator tests the absence of data 
 
 A.
@@ -27,6 +29,8 @@ IS NULL operator
 D.
 
 None of these
+
+IS NULL
 
 3) Which command used to change the table storage characterstics
 
@@ -43,6 +47,8 @@ D.
 
 None of these
 
+None Of these
+
 4) Which command used to SELECT only copy of each set of duplicate rows
 
 A.
@@ -58,6 +64,8 @@ D.
 
 All of the above
 
+Distinct
+
 5) Identify the correct command below
 
 A.
@@ -71,6 +79,7 @@ C.
 SELECT Username, Password WHERE Username = 'user1'
 D.
 
+B
 None of these
 
 6) From clause used for 
@@ -78,6 +87,7 @@ None of these
 A.
 
 specify what table we are selecting or deleting data FROM
+
 B.
 
 specify range for search condition
@@ -87,7 +97,8 @@ specify search condition
 D.
 
 None of these
- 
+
+A 
   
 7) Which clause used to retrieve unique values
 
@@ -104,6 +115,8 @@ D.
 
 DIFFERENT
 
+distinct
+
 8) How to display max value
 
 A.
@@ -116,6 +129,8 @@ C.
 
 UPPER
 D.
+
+MAX
 
 MAX
 
@@ -134,6 +149,8 @@ D.
 
 None of these
 
+A
+
 10) Identify aggregate function below
 
 .
@@ -148,6 +165,8 @@ JOIN
 D.
 
 LEN
+
+AVG
 
 11) Which command used to modify data in table
 
@@ -164,6 +183,9 @@ D.
 
 MODIFY
 
+UPDATE
+
+
 12) Which command used to delete data from table(dont retrieve back)
 
 A.
@@ -176,6 +198,8 @@ C.
 
 ALTER
 D.
+
+TRUNCATE
 
 TRUNCATE
 
@@ -193,6 +217,8 @@ ORDER BY
 D.
 
 SORT
+
+ORDER BY
 
 14) select substr('123456789',instr('abcabcabc','b'),4) from dual;
 
@@ -241,7 +267,11 @@ D.
 
 0
 
+9
+
 17) select round(45.926,-1) from dual;
+
+50
 
 18) Which of following must be enclosed in double quotes
 
@@ -256,6 +286,7 @@ C.
 Strings
 D.
 
+Column Alias
 All of the above
 
 19) How to Undo the changes of table dml operations
@@ -272,6 +303,9 @@ TRUNCATE
 D.
 
 DELETE
+
+
+Rollback
 
 20) Find all cities whose humidity is 89
 
