@@ -1,4 +1,11 @@
 
+ShowBooks, SearchBook, AddBook, UpdateBook, DeleteBook 
+
+In AddBook, Id to be generated automatically. 
+
+Please finish by 12.30 
+as we finish servlets and start JSP.
+
 CREATE TABLE Books(
 	Id number primary key,
 	Name varchar2(50) NULL,
