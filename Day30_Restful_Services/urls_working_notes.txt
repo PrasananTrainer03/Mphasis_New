@@ -64,6 +64,8 @@ for Restful services, here we are using jersey framework version 2.25.1 we are u
 
 @PathParam : This annotation allows you to pass parameters with the url address. 
 
+@Consumes : Used to specify the MIME mediatype of representation that can be given as input. 
+
 
 
 
