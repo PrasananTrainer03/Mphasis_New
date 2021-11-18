@@ -1,0 +1,77 @@
+AcceptOrReject Order
+
+OrderDao write 2 methods
+public Orders searchByOrderId(int ordId) {
+		String cmd = "select * from Orders where ord_id=?";
+		List<Orders> ordersList=null;
+		ordersList=jdbc.query(cmd,new Object[] {ordId}, new RowMapper<Orders>() {
+
+			@Override
+			public Orders mapRow(ResultSet rs, int rowNum) throws SQLException {
+				Orders orders = new Orders();
+				orders.setOrdId(rs.getInt("ORD_ID"));
+				orders.setCusId(rs.getInt("CUS_ID"));
+				orders.setVenId(rs.getInt("VEN_ID"));
+				orders.setWalSource(rs.getString("WAL_SOURCE"));
+				orders.setMenId(rs.getInt("MEN_ID"));
+				orders.setOrdDate(rs.getDate("ORD_DATE"));
+				orders.setOrdBillamount(rs.getDouble("ORD_BILLAMOUNT"));
+				orders.setOrdStatus(rs.getString("ORD_STATUS"));
+				orders.setOrdComments(rs.getString("ORD_COMMENTS"));
+				return orders;
+			}
+			
+		});
+		return ordersList.get(0);
+	}
+	
+	public String updateStatus(int ordId,String ordStatus) {
+		String cmd = "Update Orders set ORD_STATUS=? WHERE ord_Id=?";
+		jdbc.update(cmd, new Object[] {ordStatus,ordId});
+		return "Order Accepted...";
+	}
+
+___________________________________________________________________________________________
+
+
+WalletDAO write the below code
+_________________________________
+
+public String refundWallet(int custId, String walType, double walAmount) {
+		String cmd = "Update Wallet set WAL_AMOUNT=WAL_AMOUNT+? "
+				+ " WHERE CUS_ID=? AND WAL_SOURCE=?";
+		jdbc.update(cmd, new Object[] {walAmount,custId,walType});
+		return "Amount Debited from Wallet...";
+	}
+___________________________________________________________________________________________________
+
+OrderService write the below code
+
+	public String acceptOrRejectOrder(int ordId,int venId,String status) {
+		Orders orders = odao.searchByOrderId(ordId);
+		int vid = orders.getVenId();
+		int cid = orders.getCusId();
+		String walType = orders.getWalSource();
+		double billAmount = orders.getOrdBillamount();
+		if (vid!=venId) {
+			return "You are unauthorized vendor...";
+		} 
+		if (status.toUpperCase().equals("YES")) {
+			return odao.updateStatus(ordId,"ACCEPTED");
+		} else {
+			odao.updateStatus(ordId, "DENIED");
+			wdao.refundWallet(cid, walType, billAmount);
+			return "Order Rejected and Amount Refunded...";
+		}
+	}
+
+___________________________________________________________________________________________
+
+OrderController
+
+@PostMapping("/acceptOrRejectOrder/{ordId}/{venId}/{status}")
+	public String acceptOrReject(@PathVariable int ordId,@PathVariable int venId, 
+			@PathVariable String status) {
+		return service.acceptOrRejectOrder(ordId, venId, status);
+	}
+
